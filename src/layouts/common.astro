@@ -1,5 +1,6 @@
 ---
 const { title, pageTitle } = Astro.props;
+const url = new URL(Astro.request.url).pathname;
 ---
 
 <html lang="en">
@@ -25,21 +26,28 @@ const { title, pageTitle } = Astro.props;
           <div class="lg:flex-grow">
             <a
               href="/"
-              class="mx-5 font-medium text-gray-500 hover:text-gray-900">Home</a
+              class={url === "/"
+                ? "font-bold"
+                : "mx-5 font-medium text-gray-500 hover:text-gray-900"}>Home</a
             >
             <a
               href="/pricing"
-              class="mx-5 font-medium text-gray-500 hover:text-gray-900"
+              class={url === "/pricing"
+                ? "font-bold"
+                : "mx-5 font-medium text-gray-500 hover:text-gray-900"}
               >Pricing</a
             >
             <a
               href="/blog"
-              class="mx-5 font-bold text-gray-800 hover:text-gray-900">Blog</a
+              class={url === "/blog"
+                ? "font-bold"
+                : "mx-5 font-bold text-gray-800 hover:text-gray-900"}>Blog</a
             >
             <a
               href="/login"
-              class="mx-5 font-medium text-gray-500 hover:text-gray-900"
-              >Login</a
+              class={url === "/login"
+                ? "font-bold"
+                : "mx-5 font-medium text-gray-500 hover:text-gray-900"}>Login</a
             >
           </div>
 
