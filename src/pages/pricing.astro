@@ -1,143 +1,69 @@
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
-    <meta name="viewport" content="width=device-width" />
-    <title>Pricing</title>
-  </head>
+---
+import Layout from "../layouts/common.astro";
+---
 
-  <body>
-    <div class="bg-[#edecf2] py-5 min-h-screen">
-      <nav
-        class="flex my-10 space-x-10 items-center justify-between flex-wrap px-48"
-      >
-        <div class="flex items-center flex-shrink-0 mr-6 mx-12">
-          <h1 class="text-3xl font-extrabold tracking-tight text-[#333132]">
-            Dail.
-          </h1>
-        </div>
-
-        <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
-          <div class="lg:flex-grow">
-            <a
-              href="/"
-              class="mx-5 font-medium text-gray-500 hover:text-gray-900">Home</a
-            >
-            <a
-              href="/pricing"
-              class="mx-5 font-bold text-gray-800 hover:text-gray-900"
-              >Pricing</a
-            >
-            <a
-              href="/blog"
-              class="mx-5 font-medium text-gray-500 hover:text-gray-900">Blog</a
-            >
-            <a
-              href="/login"
-              class="mx-5 font-medium text-gray-500 hover:text-gray-900"
-              >Login</a
-            >
-          </div>
-
-          <div>
-            <a
-              href="/signup"
-              class="inline-block px-4 py-2 leading-none border rounded-md border-[#4E4081] mt-4 lg:mt-0 font-medium text-white bg-[#4E4081]"
-              >Get Dail</a
-            >
-          </div>
-        </div>
-      </nav>
-
-      <div class="my-20">
-        <h1
-          class="mt-10 text-center text-3xl mb-10 font-extrabold tracking-tight text-gray-900"
+<Layout title="Pricing plans">
+  <div class="my-20">
+    <div class="mt-20 mb-20 mx-auto text-center max-w-3xl px-10">
+      <div class="space-y-12 sm:space-y-0 sm:grid sm:grid-cols-2 sm:gap-x-8">
+        <div
+          class="p-8 bg-white border border-gray-200 rounded-2xl shadow-sm flex flex-col"
         >
-          Pricing plans
-        </h1>
+          <h3 class="text-3xl font-medium text-gray-900">Basic</h3>
+          <p class="mt-4 mx-auto">
+            <span class="text-5xl font-extrabold tracking-tight">$39</span>
+            <span class="ml-1 text-xl font-semibold">/month</span>
+          </p>
+          <p class="mt-6 text-gray-500">The essentials</p>
 
-        <div class="mt-20 mb-20 mx-auto text-center max-w-3xl px-10">
-          <div
-            class="space-y-12 sm:space-y-0 sm:grid sm:grid-cols-2 sm:gap-x-8"
-          >
-            <div
-              class="p-8 bg-white border border-gray-200 rounded-2xl shadow-sm flex flex-col"
-            >
-              <h3 class="text-3xl font-medium text-gray-900">Basic</h3>
-              <p class="mt-4 mx-auto">
-                <span class="text-5xl font-extrabold tracking-tight">$39</span>
-                <span class="ml-1 text-xl font-semibold">/month</span>
-              </p>
-              <p class="mt-6 text-gray-500">The essentials</p>
+          <ul role="list" class="mt-6 space-y-6">
+            <li class="flex">
+              <span class="-mt-2 text-blue-500 text-3xl">&check;</span>
+              <span class="ml-3 text-gray-500 text-left"
+                >Access to our service</span
+              >
+            </li>
 
-              <ul role="list" class="mt-6 space-y-6">
-                <li class="flex">
-                  <span class="-mt-2 text-blue-500 text-3xl">&check;</span>
-                  <span class="ml-3 text-gray-500 text-left"
-                    >Access to our service</span
-                  >
-                </li>
+            <li class="flex">
+              <span class="-mt-2 text-blue-500 text-3xl">&check;</span>
+              <span class="ml-3 text-gray-500 text-left">Support</span>
+            </li>
+          </ul>
+        </div>
 
-                <li class="flex">
-                  <span class="-mt-2 text-blue-500 text-3xl">&check;</span>
-                  <span class="ml-3 text-gray-500 text-left">Support</span>
-                </li>
-              </ul>
-            </div>
+        <div
+          class="p-8 bg-white border border-gray-200 rounded-2xl shadow-sm flex flex-col"
+        >
+          <h3 class="text-3xl font-medium text-gray-900">Premium</h3>
+          <p class="mt-4 mx-auto">
+            <span class="text-5xl font-extrabold tracking-tight">$149</span>
+            <span class="ml-1 text-xl font-semibold">/month</span>
+          </p>
+          <p class="mt-6 text-gray-500">Much more features</p>
 
-            <div
-              class="p-8 bg-white border border-gray-200 rounded-2xl shadow-sm flex flex-col"
-            >
-              <h3 class="text-3xl font-medium text-gray-900">Premium</h3>
-              <p class="mt-4 mx-auto">
-                <span class="text-5xl font-extrabold tracking-tight">$149</span>
-                <span class="ml-1 text-xl font-semibold">/month</span>
-              </p>
-              <p class="mt-6 text-gray-500">Much more features</p>
+          <ul role="list" class="mt-6 space-y-6">
+            <li class="flex">
+              <span class="-mt-2 text-blue-500 text-3xl">&check;</span>
+              <span class="ml-3 text-gray-500">Access to our service</span>
+            </li>
 
-              <ul role="list" class="mt-6 space-y-6">
-                <li class="flex">
-                  <span class="-mt-2 text-blue-500 text-3xl">&check;</span>
-                  <span class="ml-3 text-gray-500">Access to our service</span>
-                </li>
+            <li class="flex">
+              <span class="-mt-2 text-blue-500 text-3xl">&check;</span>
+              <span class="ml-3 text-gray-500 text-left">Support</span>
+            </li>
 
-                <li class="flex">
-                  <span class="-mt-2 text-blue-500 text-3xl">&check;</span>
-                  <span class="ml-3 text-gray-500 text-left">Support</span>
-                </li>
-
-                <li class="flex">
-                  <span class="-mt-2 text-blue-500 text-3xl">&check;</span>
-                  <span class="ml-3 text-gray-500 text-left">More features</span
-                  >
-                </li>
-              </ul>
-            </div>
-          </div>
-          <a
-            href="#"
-            class="bg-[#4E4081] text-white hover:bg-[#463a74] mt-8 block w-full py-3 px-6 border border-transparent rounded-md text-center font-medium"
-            >Sign up</a
-          >
+            <li class="flex">
+              <span class="-mt-2 text-blue-500 text-3xl">&check;</span>
+              <span class="ml-3 text-gray-500 text-left">More features</span>
+            </li>
+          </ul>
         </div>
       </div>
+      <a
+        href="#"
+        class="bg-[#4E4081] text-white hover:bg-[#463a74] mt-8 block w-full py-3 px-6 border border-transparent rounded-md text-center font-medium"
+        >Sign up</a
+      >
     </div>
-
-    <footer class="bg-[#edecf2] pt-12 border-t-2 border-gray-200">
-      <nav class="flex justify-center pb-10 space-x-10">
-        <a href="/" class="font-medium text-gray-500 hover:text-gray-900"
-          >Home</a
-        >
-        <a href="/pricing" class="font-medium text-gray-500 hover:text-gray-900"
-          >Pricing</a
-        >
-        <a href="/blog" class="font-medium text-gray-500 hover:text-gray-900"
-          >Blog</a
-        >
-      </nav>
-      <p class="text-center text-gray-400 pb-12">
-        Dail - Made by a remote team with &#10084;&#65039; from all over the &#127757;
-      </p>
-    </footer>
-  </body>
-</html>
+  </div>
+</Layout>
