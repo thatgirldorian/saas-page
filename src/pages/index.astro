@@ -1,149 +1,63 @@
-<html lang="en">
-  <body>
-    <html lang="en">
-      <head>
-        <meta charset="utf-8" />
-        <link rel="icon" type="image/x-icon" href="/favicon.ico" />
-        <meta name="viewport" content="width=device-width" />
-        <title>Home</title>
-      </head>
+---
+import Layout from "../layouts/common.astro";
+---
 
-      <body>
-        <div class="bg-[#edecf2] py-5 min-h-screen">
-          <nav
-            class="flex my-10 space-x-10 items-center justify-between flex-wrap px-48"
-          >
-            <div class="flex items-center flex-shrink-0 mr-6 mx-12">
-              <h1 class="text-3xl font-extrabold tracking-tight text-[#333132]">
-                Dail.
-              </h1>
-            </div>
+<Layout>
+  <div class="py-10">
+    <h2
+      class="text-center text-3xl my-10 font-extrabold tracking-tight text-[#333132]"
+    >
+      The calendar you need like yesterday
+    </h2>
 
-            <div
-              class="w-full block flex-grow lg:flex lg:items-center lg:w-auto"
-            >
-              <div class="lg:flex-grow">
-                <a
-                  href="/"
-                  class="mx-5 font-bold text-gray-800 hover:text-gray-900"
-                  >Home</a
-                >
-                <a
-                  href="/pricing"
-                  class="mx-5 font-medium text-gray-500 hover:text-gray-900"
-                  >Pricing</a
-                >
-                <a
-                  href="/blog"
-                  class="mx-5 font-medium text-gray-500 hover:text-gray-900"
-                  >Blog</a
-                >
-                <a
-                  href="/login"
-                  class="mx-5 font-medium text-gray-500 hover:text-gray-900"
-                  >Login</a
-                >
-              </div>
+    <p class="text-center text-lg text-[#0d0d0d]">
+      The ultimate calendar app for all your needs. <br /> Dail turns your calendar
+      into a living, breathing <br />
+      workspace that makes all your meetings 10x better.
+    </p>
+    <button
+      class="block rounded-md text-white px-5 py-3 mx-auto mt-10 font-bold bg-gradient-to-r from-[#DB6975] via-[#B76285] to-[#8556A1]"
+      >Sign me up!</button
+    >
+  </div>
 
-              <div>
-                <a
-                  href="/signup"
-                  class="inline-block px-4 py-2 leading-none border rounded-md border-[#4E4081] mt-4 lg:mt-0 font-medium text-white bg-[#4E4081]"
-                  >Get Dail</a
-                >
-              </div>
-            </div>
-          </nav>
+  <!-- Middle section -->
+  <div class="my-20 mx-auto text-center max-w-3xl px-10">
+    <p class="mt-2 text-2xl font-extrabold text-gray-900 tracking-tight">
+      Everything you need to know about this app
+    </p>
+    <p class="mt-5 max-w-prose mx-auto text-xl text-gray-500">
+      A great list of things it allows you to do
+    </p>
 
-          <div class="py-10">
-            <h2
-              class="text-center text-3xl my-10 font-extrabold tracking-tight text-[#333132]"
-            >
-              The calendar you need like yesterday
-            </h2>
+    <!-- Grids -->
+    <div class="mt-12 grid gap-8 grid-cols-1 md:grid-cols-2">
+      <div class="bg-gray-50 rounded-lg px-6 pb-8 border-2">
+        <h3 class="mt-8 text-lg font-medium text-gray-900 tracking-tight">
+          First benefit
+        </h3>
+        <p class="mt-5 text-gray-500">You can save time</p>
+      </div>
 
-            <p class="text-center text-lg text-[#0d0d0d]">
-              The ultimate calendar app for all your needs. <br /> Dail turns your
-              calendar into a living, breathing <br />
-              workspace that makes all your meetings 10x better.
-            </p>
-            <button
-              class="block rounded-md text-white px-5 py-3 mx-auto mt-10 font-bold bg-gradient-to-r from-[#DB6975] via-[#B76285] to-[#8556A1]"
-              >Sign me up!</button
-            >
-          </div>
+      <div class="bg-gray-50 rounded-lg px-6 pb-8 border-2">
+        <h3 class="mt-8 text-lg font-medium text-gray-900 tracking-tight">
+          Second benefit
+        </h3>
+        <p class="mt-5 text-gray-500">You can save money</p>
+      </div>
+      <div class="bg-gray-50 rounded-lg px-6 pb-8 border-2]">
+        <h3 class="mt-8 text-lg font-medium text-gray-900 tracking-tight">
+          3rd benefit
+        </h3>
+        <p class="mt-5 text-gray-500">You can avoid X</p>
+      </div>
 
-          <!-- Middle section -->
-          <div class="my-20 mx-auto text-center max-w-3xl px-10">
-            <p
-              class="mt-2 text-2xl font-extrabold text-gray-900 tracking-tight"
-            >
-              Everything you need to know about this app
-            </p>
-            <p class="mt-5 max-w-prose mx-auto text-xl text-gray-500">
-              A great list of things it allows you to do
-            </p>
-
-            <!-- Grids -->
-            <div class="mt-12 grid gap-8 grid-cols-1 md:grid-cols-2">
-              <div class="bg-gray-50 rounded-lg px-6 pb-8 border-2">
-                <h3
-                  class="mt-8 text-lg font-medium text-gray-900 tracking-tight"
-                >
-                  First benefit
-                </h3>
-                <p class="mt-5 text-gray-500">You can save time</p>
-              </div>
-
-              <div class="bg-gray-50 rounded-lg px-6 pb-8 border-2">
-                <h3
-                  class="mt-8 text-lg font-medium text-gray-900 tracking-tight"
-                >
-                  Second benefit
-                </h3>
-                <p class="mt-5 text-gray-500">You can save money</p>
-              </div>
-              <div class="bg-gray-50 rounded-lg px-6 pb-8 border-2]">
-                <h3
-                  class="mt-8 text-lg font-medium text-gray-900 tracking-tight"
-                >
-                  3rd benefit
-                </h3>
-                <p class="mt-5 text-gray-500">You can avoid X</p>
-              </div>
-
-              <div class="bg-gray-50 rounded-lg px-6 pb-8 border-2">
-                <h3
-                  class="mt-8 text-lg font-medium text-gray-900 tracking-tight"
-                >
-                  4th benefit
-                </h3>
-                <p class="mt-5 text-gray-500">You can do Y</p>
-              </div>
-            </div>
-          </div>
-
-          <footer class="bg-[#edecf2] pt-12 border-t-2 border-gray-200">
-            <nav class="flex justify-center pb-10 space-x-10">
-              <a href="/" class="font-medium text-gray-500 hover:text-gray-900"
-                >Home</a
-              >
-              <a
-                href="/pricing"
-                class="font-medium text-gray-500 hover:text-gray-900">Pricing</a
-              >
-              <a
-                href="/blog"
-                class="font-medium text-gray-500 hover:text-gray-900">Blog</a
-              >
-            </nav>
-            <p class="text-center text-gray-400 pb-12">
-              Dail - Made remotely with &#10084;&#65039; from all over the
-              &#127757;
-            </p>
-          </footer>
-        </div>
-      </body>
-    </html>
-  </body>
-</html>
+      <div class="bg-gray-50 rounded-lg px-6 pb-8 border-2">
+        <h3 class="mt-8 text-lg font-medium text-gray-900 tracking-tight">
+          4th benefit
+        </h3>
+        <p class="mt-5 text-gray-500">You can do Y</p>
+      </div>
+    </div>
+  </div>
+</Layout>
